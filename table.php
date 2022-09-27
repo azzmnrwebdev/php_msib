@@ -160,7 +160,7 @@
 
             if (isset($tombol)) { 
         ?>
-            <div class="table-responsive rounded mt-4">
+            <div class="table-responsive rounded my-5">
                 <table class="table table-bordered mb-2">
                     <thead>
                         <tr bgcolor="#fde047">
