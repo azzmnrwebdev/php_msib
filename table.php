@@ -18,35 +18,61 @@
 
     <!-- custom css -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 
         body {
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Lora', serif;
         }
 
         table * {
             white-space: nowrap;
+        }
+
+        .font-custom {
+            font-family: 'Lobster', cursive;
+        }
+
+        .form-control,
+        .form-select,
+        .form-check-input {
+            border: 1px solid lightslategray;
+        }
+
+        .form-control:focus,
+        .form-select:focus,
+        .form-check-input:focus {
+            outline: 0;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            border: 1px solid #2dd4bf;
+        }
+
+        .btn:focus,
+        .btn:active {
+            outline: none !important;
+            box-shadow: none !important;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h3 class="text-center mt-5 text-primary">Form Input Data Pegawai</h3>
+        <h3 class="text-center mt-5 text-primary font-custom">Form Input Data Pegawai</h3>
         <hr />
 
         <!-- form -->
         <form class="row g-3" method="POST">
             <!-- nama pegawai dan agama -->
             <div class="col-md-6">
-                <label for="inputName" class="form-label">Nama Pegawai</label>
-                <input type="text" class="form-control" id="inputName" name="nama" autocomplete="off" />
+                <label for="inputName" class="form-label fw-semibold">Nama Pegawai</label>
+                <input type="text" class="form-control" id="inputName" name="nama" autocomplete="off" required />
             </div>
 
             <div class="col-md-6">
-                <label for="inputAgama" class="form-label">Agama</label>
-                <select id="inputAgama" name="agama" class="form-select">
-                    <option selected>-- Pilih Agama --</option>
+                <label for="inputAgama" class="form-label fw-semibold">Agama</label>
+                <select id="inputAgama" name="agama" class="form-select" required>
+                    <option value="" selected>-- Pilih Agama --</option>
                     <option value="islam">Islam</option>
                     <option value="kristen">Kristen</option>
                     <option value="katolik">Katolik</option>
@@ -57,42 +83,42 @@
 
             <!-- jabatan dan status menikah -->
             <div class="col-md-6">
-                <label class="form-label d-block">Jabatan</label>
+                <label class="form-label d-block fw-semibold">Jabatan</label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="manager" type="radio" name="jabatan" value="Manager" />
+                    <input class="form-check-input" id="manager" type="radio" name="jabatan" value="Manager" required />
                     <label class="form-check-label" for="manager">Manager</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="asisten" type="radio" name="jabatan" value="Asisten" />
+                    <input class="form-check-input" id="asisten" type="radio" name="jabatan" value="Asisten" required />
                     <label class="form-check-label" for="asisten">Asisten</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="kabag" type="radio" name="jabatan" value="Kepala Bagian" />
+                    <input class="form-check-input" id="kabag" type="radio" name="jabatan" value="Kepala Bagian" required />
                     <label class="form-check-label" for="kabag">Kepala Bagian</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="staff" type="radio" name="jabatan" value="Staff" />
+                    <input class="form-check-input" id="staff" type="radio" name="jabatan" value="Staff" required />
                     <label class="form-check-label" for="staff">Staff</label>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <label class="form-label d-block">Status</label>
+                <label class="form-label d-block fw-semibold">Status</label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="menikah" type="radio" name="status" value="Menikah" />
+                    <input class="form-check-input" id="menikah" type="radio" name="status" value="Menikah" required />
                     <label class="form-check-label" for="menikah">Menikah</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="belumMenikah" type="radio" name="status" value="Belum Menikah" />
+                    <input class="form-check-input" id="belumMenikah" type="radio" name="status" value="Belum Menikah" required />
                     <label class="form-check-label" for="belumMenikah">Belum Menikah</label>
                 </div>
             </div>
 
             <!-- jumlah anak -->
             <div class="col-12">
-                <label for="inputJumnak" class="form-label">Jumlah Anak</label>
+                <label for="inputJumnak" class="form-label fw-semibold">Jumlah Anak</label>
                 <input type="text" class="form-control" id="inputJumnak" name="jumnak" autocomplete="off" />
             </div>
 
