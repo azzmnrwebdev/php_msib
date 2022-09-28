@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Input Data Pegawai - Tugas 2 PHP | Azzmnrwebdev</title>
+    <title>Form Input Data Gaji Pegawai - Tugas 2 PHP | Azzmnrwebdev</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
@@ -58,19 +58,19 @@
 
 <body>
     <div class="container">
-        <h3 class="text-center mt-5 text-primary font-custom">Form Input Data Pegawai</h3>
+        <h3 class="text-center mt-5 text-primary font-custom">Form Input Data Gaji Pegawai</h3>
         <hr />
 
         <!-- form -->
         <form class="row g-3" method="POST">
             <!-- nama pegawai dan agama -->
             <div class="col-md-6">
-                <label for="inputName" class="form-label fw-semibold">Nama Pegawai</label>
+                <label for="inputName" class="form-label fw-semibold">Nama Pegawai <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="inputName" name="nama" autocomplete="off" required />
             </div>
 
             <div class="col-md-6">
-                <label for="inputAgama" class="form-label fw-semibold">Agama</label>
+                <label for="inputAgama" class="form-label fw-semibold">Agama <span class="text-danger">*</span></label>
                 <select id="inputAgama" name="agama" class="form-select" required>
                     <option value="" selected>-- Pilih Agama --</option>
                     <option value="islam">Islam</option>
@@ -83,7 +83,7 @@
 
             <!-- jabatan dan status menikah -->
             <div class="col-md-6">
-                <label class="form-label d-block fw-semibold">Jabatan</label>
+                <label class="form-label d-block fw-semibold">Jabatan <span class="text-danger">*</span></label>
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" id="manager" type="radio" name="jabatan" value="Manager" required />
@@ -104,7 +104,7 @@
             </div>
 
             <div class="col-md-6">
-                <label class="form-label d-block fw-semibold">Status</label>
+                <label class="form-label d-block fw-semibold">Status <span class="text-danger">*</span></label>
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" id="menikah" type="radio" name="status" value="Menikah" required />
@@ -181,7 +181,7 @@
                         <tr bgcolor="#fefce8">
                             <td><?= $nama; ?> </td>
                             <td><?= $jabatan; ?></td>
-                            <td><?= $agama; ?>
+                            <td><?= $agama; ?></td>
                             <td><?= $status; ?></td>
                             <td><?= $jumnak; ?></td>
                             <td><?= 'Rp ',number_format($gapok, 2, ',', '.'); ?></td>
@@ -193,6 +193,10 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        <?php } else { ?>
+            <div class="alert alert-warning my-5" role="alert">
+                Data belum dibuat..!
             </div>
         <?php } ?>
     </div>
