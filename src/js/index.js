@@ -1,4 +1,4 @@
-// show hide input text jumlah anak 
+// show hide input text jumlah anak
 const jumlahAnak = document.getElementById("jmlhAnak");
 const form = document.getElementById("frm");
 
@@ -11,5 +11,3 @@ form.addEventListener("input", () => {
     jumlahAnak.classList.remove("d-block");
   }
 });
-
-// validation

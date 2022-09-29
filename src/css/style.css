@@ -33,7 +33,9 @@ table * {
 }
 
 .btn:focus,
-.btn:active {
+.btn:active,
+.btn-close:focus,
+.btn-close:active {
     outline: none !important;
     box-shadow: none !important;
 }

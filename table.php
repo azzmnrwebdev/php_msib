@@ -132,8 +132,8 @@
                     <thead>
                         <tr bgcolor="#fde047">
                             <th>Nama Pegawai</th>
-                            <th>Jabatan</th>
                             <th>Agama</th>
+                            <th>Jabatan</th>
                             <th>Status</th>
                             <th>Jumlah Anak</th>
                             <th>Gaji Pokok</th>
@@ -146,11 +146,11 @@
                     </thead>
                     <tbody>
                         <tr bgcolor="#fefce8">
-                            <td><?= $nama; ?> </td>
-                            <td><?= $jabatan; ?></td>
+                            <td><?= $nama; ?></td>
                             <td><?= $agama; ?></td>
+                            <td><?= $jabatan; ?></td>
                             <td><?= $status; ?></td>
-                            <td><?= $jumnak; ?></td>
+                            <td><?= $jumnak; ?> Anak</td>
                             <td>Rp. <?= number_format($gapok, 2, ',', '.'); ?></td>
                             <td>Rp. <?= number_format($tunjab, 2, ',', '.'); ?></td>
                             <td>Rp. <?= number_format($tunkel, 2, ',', '.'); ?></td>
