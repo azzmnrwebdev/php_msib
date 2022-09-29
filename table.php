@@ -17,114 +17,81 @@
     <link rel="stylesheet" href="src/css/bootstrap.min.css" />
 
     <!-- custom css -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
-
-        body {
-            font-family: 'Lora', serif;
-        }
-
-        table * {
-            white-space: nowrap;
-        }
-
-        .font-custom {
-            font-family: 'Lobster', cursive;
-        }
-
-        .form-control,
-        .form-select,
-        .form-check-input {
-            border: 1px solid lightslategray;
-        }
-
-        .form-control:focus,
-        .form-select:focus,
-        .form-check-input:focus {
-            outline: 0;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            border: 1px solid #2dd4bf;
-        }
-
-        .btn:focus,
-        .btn:active {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h3 class="text-center mt-5 text-primary font-custom">Form Input Data Gaji Pegawai</h3>
-        <hr />
+    <div class="container py-5">
+        <h3 class="text-center mb-5 text-primary font-custom">Form Input Data Pegawai</h3>
+
+        <hr class="m-0" />
 
         <!-- form -->
-        <form class="row g-3" method="POST">
-            <!-- nama pegawai dan agama -->
-            <div class="col-md-6">
-                <label for="inputName" class="form-label fw-semibold">Nama Pegawai <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="inputName" name="nama" autocomplete="off" required />
+        <form id="frm" class="row g-3 mt-3" method="POST">
+            <!-- inputan nama pegawai -->
+            <div class="col-12">
+                <label for="inputName" class="form-label fw-semibold">Nama Pegawai</label>
+                <input type="text" class="form-control" id="inputName" name="nama" autocomplete="off" maxlength="45" />
             </div>
 
-            <div class="col-md-6">
-                <label for="inputAgama" class="form-label fw-semibold">Agama <span class="text-danger">*</span></label>
-                <select id="inputAgama" name="agama" class="form-select" required>
-                    <option value="" selected>-- Pilih Agama --</option>
-                    <option value="islam">Islam</option>
-                    <option value="kristen">Kristen</option>
-                    <option value="katolik">Katolik</option>
-                    <option value="hindu">Hindu</option>
-                    <option value="budha">Budha</option>
+            <!-- inputan agama -->
+            <div class="col-12">
+                <label for="inputAgama" class="form-label fw-semibold">Agama</label>
+                <select id="inputAgama" name="agama" class="form-select">
+                    <option value="">Pilih Agama</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
                 </select>
             </div>
 
-            <!-- jabatan dan status menikah -->
-            <div class="col-md-6">
-                <label class="form-label d-block fw-semibold">Jabatan <span class="text-danger">*</span></label>
+            <!-- inputan jabatan -->
+            <div class="col-12">
+                <label class="form-label d-block fw-semibold">Jabatan</label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="manager" type="radio" name="jabatan" value="Manager" required />
+                    <input class="form-check-input" id="manager" type="radio" name="jabatan" value="Manager" />
                     <label class="form-check-label" for="manager">Manager</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="asisten" type="radio" name="jabatan" value="Asisten" required />
+                    <input class="form-check-input" id="asisten" type="radio" name="jabatan" value="Asisten" />
                     <label class="form-check-label" for="asisten">Asisten</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="kabag" type="radio" name="jabatan" value="Kepala Bagian" required />
+                    <input class="form-check-input" id="kabag" type="radio" name="jabatan" value="Kepala Bagian" />
                     <label class="form-check-label" for="kabag">Kepala Bagian</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="staff" type="radio" name="jabatan" value="Staff" required />
+                    <input class="form-check-input" id="staff" type="radio" name="jabatan" value="Staff" />
                     <label class="form-check-label" for="staff">Staff</label>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <label class="form-label d-block fw-semibold">Status <span class="text-danger">*</span></label>
+            <!-- inputan status menikah -->
+            <div class="col-12">
+                <label class="form-label d-block fw-semibold">Status</label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="menikah" type="radio" name="status" value="Menikah" required />
+                    <input class="form-check-input" id="menikah" type="radio" name="status" value="Menikah" />
                     <label class="form-check-label" for="menikah">Menikah</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="belumMenikah" type="radio" name="status" value="Belum Menikah" required />
+                    <input class="form-check-input" id="belumMenikah" type="radio" name="status" value="Belum Menikah" />
                     <label class="form-check-label" for="belumMenikah">Belum Menikah</label>
                 </div>
             </div>
 
-            <!-- jumlah anak -->
-            <div class="col-12">
+            <!-- inputan jumlah anak -->
+            <div class="col-12 d-none" id="jmlhAnak">
                 <label for="inputJumnak" class="form-label fw-semibold">Jumlah Anak</label>
-                <input type="text" class="form-control" id="inputJumnak" name="jumnak" autocomplete="off" />
+                <input type="number" class="form-control" id="inputJumnak" name="jumnak" autocomplete="off" min="1" max="15" />
             </div>
 
             <!-- button submit -->
             <div class="col-12">
-                <button type="submit" name="proses" class="btn btn-sm btn-primary">Simpan</button>
+                <button type="submit" name="proses" class="btn btn-primary">Simpan</button>
             </div>
         </form>
 
@@ -134,7 +101,7 @@
             $agama = $_POST['agama'];
             $jabatan = $_POST['jabatan'];
             $status = $_POST['status'];
-            $jumnak = $_POST['jumnak'];
+            $jumnak = ($status == "Menikah") ? $_POST['jumnak'] : 0;
             $tombol = $_POST['proses'];
 
             // menentukan gaji pokok menggunakan switch case
@@ -146,7 +113,7 @@
                 default: $gapok = 0; break;
             }
 
-            // menentukan tunjangan keluarga menggunakan multi kondisi
+            // menentukan tunjangan keluarga menggunakan if multi kondisi
             if ($status == "Menikah" && $jumnak <= 2) $tunkel = $gapok * 5 / 100;
             else if ($status == "Menikah" && $jumnak <= 5) $tunkel = $gapok * 10 / 100;
             else if ($status == "Menikah" && $jumnak > 5) $tunkel = $gapok * 15 / 100;
@@ -155,12 +122,12 @@
             // menentukan tunjangan jabatan, gaji kotor, zakat dan take home pay
             $tunjab = $gapok * 20 / 100;
             $gator = $gapok + $tunjab + $tunkel;
-            $zaprof = $agama == "islam" && $gator >= 6000000 ? $gator * 2.5 / 100 : 0;
+            $zaprof = ($agama == "Islam" && $gator >= 6000000) ? $gator * 2.5 / 100 : 0;
             $takeHomePay = $gator - $zaprof;
 
             if (isset($tombol)) { 
         ?>
-            <div class="table-responsive rounded my-5">
+            <div class="table-responsive rounded mt-5">
                 <table class="table table-bordered mb-2">
                     <thead>
                         <tr bgcolor="#fde047">
@@ -184,26 +151,24 @@
                             <td><?= $agama; ?></td>
                             <td><?= $status; ?></td>
                             <td><?= $jumnak; ?></td>
-                            <td><?= 'Rp ',number_format($gapok, 2, ',', '.'); ?></td>
-                            <td><?= 'Rp ',number_format($tunjab, 2, ',', '.'); ?></td>
-                            <td><?= 'Rp ',number_format($tunkel, 2, ',', '.'); ?></td>
-                            <td><?= 'Rp ',number_format($gator, 2, ',', '.'); ?></td>
-                            <td><?= 'Rp ',number_format($zaprof, 2, ',', '.'); ?></td>
-                            <td><?= 'Rp ',number_format($takeHomePay, 2, ',', '.'); ?></td>
+                            <td>Rp. <?= number_format($gapok, 2, ',', '.'); ?></td>
+                            <td>Rp. <?= number_format($tunjab, 2, ',', '.'); ?></td>
+                            <td>Rp. <?= number_format($tunkel, 2, ',', '.'); ?></td>
+                            <td>Rp. <?= number_format($gator, 2, ',', '.'); ?></td>
+                            <td>Rp. <?= number_format($zaprof, 2, ',', '.'); ?></td>
+                            <td>Rp. <?= number_format($takeHomePay, 2, ',', '.'); ?></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        <?php } else { ?>
-            <div class="alert alert-warning my-5" role="alert">
-                Data belum dibuat..!
-            </div>
         <?php } ?>
     </div>
 
-
     <!-- bootstrap js -->
     <script src="src/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>

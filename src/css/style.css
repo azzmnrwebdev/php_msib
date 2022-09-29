@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+}
+
+table * {
+    white-space: nowrap;
+}
+
+.font-custom {
+    font-family: 'Lobster', cursive;
+}
+
+.form-control,
+.form-select,
+.form-check-input {
+    border: 1px solid lightslategray;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border: 1px solid #2dd4bf;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
