@@ -29,7 +29,7 @@ table * {
 
 .form-control:focus,
 .form-select:focus {
-    border: 1px solid #2dd4bf;
+    border: 1px solid #14b8a6;
 }
 
 .btn:focus,
