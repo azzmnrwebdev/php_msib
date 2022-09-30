@@ -692,16 +692,16 @@ progress {
     }
 }
 
-/* @media (min-width:768px) {
+@media (min-width:768px) {
 
     .container,
     .container-md,
     .container-sm {
         max-width: 720px
     }
-} */
+}
 
-/* @media (min-width:992px) {
+@media (min-width:992px) {
 
     .container,
     .container-lg,
@@ -732,7 +732,7 @@ progress {
     .container-xxl {
         max-width: 1320px
     }
-} */
+}
 
 .row {
     --bs-gutter-x: 1.5rem;
