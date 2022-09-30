@@ -103,7 +103,6 @@
                 $jabatan = $_POST['jabatan'];
                 $status = $_POST['status'];
                 $jumnak = ($status == "Menikah") ? $_POST['jumnak'] : 0;
-                $tombol = $_POST['proses'];
 
                 // menentukan gaji pokok menggunakan switch case
                 switch ($jabatan) {
@@ -130,26 +129,26 @@
                 <div class="modal fade" id="pegawaiModal" tabindex="-1" aria-labelledby="pegawaiModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="pegawaiModalLabel">Hasil</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Nama Pegawai: <?= $nama; ?>
-                            <br />Agama: <?= $agama; ?>
-                            <br />Jabatan: <?= $jabatan; ?>
-                            <br />Status: <?= $status; ?>
-                            <br />Jumlah Anak: <?= $jumnak; ?>
-                            <br />Gaji Pokok: Rp. <?= number_format($gapok, 2, ',', '.'); ?>
-                            <br />Tunjangan Jabatan: Rp. <?= number_format($tunjab, 2, ',', '.'); ?>
-                            <br />Tunjangan Keluarga: Rp. <?= number_format($tunkel, 2, ',', '.'); ?>
-                            <br />Gaji Kotor: Rp. <?= number_format($gator, 2, ',', '.'); ?>
-                            <br />Zakat Profesi: Rp. <?= number_format($zaprof, 2, ',', '.'); ?>
-                            <br />Take Home Pay: Rp. <?= number_format($takeHomePay, 2, ',', '.'); ?>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="pegawaiModalLabel">Hasil</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Nama Pegawai                : <?= $nama; ?>
+                                <br />Agama                 : <?= $agama; ?>
+                                <br />Jabatan               : <?= $jabatan; ?>
+                                <br />Status                : <?= $status; ?>
+                                <br />Jumlah Anak           : <?= $jumnak; ?>
+                                <br />Gaji Pokok            : Rp. <?= number_format($gapok, 2, ',', '.'); ?>
+                                <br />Tunjangan Jabatan     : Rp. <?= number_format($tunjab, 2, ',', '.'); ?>
+                                <br />Tunjangan Keluarga    : Rp. <?= number_format($tunkel, 2, ',', '.'); ?>
+                                <br />Gaji Kotor            : Rp. <?= number_format($gator, 2, ',', '.'); ?>
+                                <br />Zakat Profesi         : Rp. <?= number_format($zaprof, 2, ',', '.'); ?>
+                                <br />Take Home Pay         : Rp. <?= number_format($takeHomePay, 2, ',', '.'); ?>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
