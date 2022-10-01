@@ -1,8 +1,8 @@
 <?php
-    // a
+    // memanggil file pegawai dengan fungsi require
     require 'Pegawai.php';
 
-    // membuat 5 instance object pegawai
+    // membuat 6 instance object pegawai
     $p1 = new Pegawai('01103180', 'Lovina Aulia', 'Manager', 'Islam', 'Menikah');
     $p2 = new Pegawai('01103181', 'Rafi Maulana', 'Kepala Bagian', 'Kristen', 'Belum Menikah');
     $p3 = new Pegawai('01103182', 'Yusuf Fadillah', 'Staff', 'Budha', 'Belum Menikah');
@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Gaji Pegawai - Tugas 4 OOP PHP | Azzmnrwebdev</title>
+    <title><?= Pegawai::TITLE ?> - Tugas 4 OOP PHP | Azzmnrwebdev</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -37,18 +37,21 @@
 </head>
 
 <body>
-    <header class="py-3 shadow-sm">
-        <div class="container">
-            <h2 class="text-center font-caveat fw-bold">Data Gaji Pegawai</h2>
+    <!-- header -->
+    <header class="sticky-top shadow-sm">
+        <!-- <div class="line"></div> -->
+        <div class="container py-3">
+            <h3 class="text-center"><?= Pegawai::TITLE ?></h3>
         </div>
     </header>
 
+    <!-- main content -->
     <main>
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 g-3">
                 <?php foreach ($pegawais as $pegawai) { ?>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm">
                             <div class="card-body">
                                 <?= $pegawai->mencetak() ?>
                             </div>
@@ -58,6 +61,15 @@
             </div>
         </div>
     </main>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container">
+            <p class="text-small text-center text-muted m-0">
+                Built with 💖 by <a href="https://github.com/azzmnrwebdev/php_msib/tree/pertemuan-4" target="_blank" class="text-decoration-none fw-semibold">Muh. Azzam Nur Alwi Mansyur</a>
+            </p>
+        </div>
+    </footer>
 
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

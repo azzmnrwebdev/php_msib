@@ -8,6 +8,9 @@
         public $agama;
         public $status;
 
+        // variable const
+        const TITLE = 'Data Gaji Pegawai';
+
         // constructor
         public function __construct($nip, $nama, $jabatan, $agama, $status)
         {
@@ -46,7 +49,7 @@
          * lalu mengembalikan nilai dari variable tunjab
          */
         public function setTunjab() {
-            $tunjab = $this->setGapok() * 20 /100;
+            $tunjab = $this->setGapok() * 20 / 100;
             return $tunjab;
         }
 
@@ -98,19 +101,58 @@
 
         // function untuk mencetak struktur gaji pegawai
         public function mencetak() {
-            echo '<h5 class="card-title fw-bold">'.$this->nama.'</h5>';
-            echo '<p class="card-text">
-                    NIP: '.$this->nip.
-                    '<br />Jabatan: '.$this->jabatan.
-                    '<br />Agama: '.$this->agama.
-                    '<br />Status: '.$this->status.
-                    '<br />Gaji Pokok: Rp. '.number_format($this->setGapok(), 2, ',', '.').
-                    '<br />Tunjangan Jabatan: Rp. '.number_format($this->setTunjab(), 2, ',', '.').
-                    '<br />Tunjangan Keluarga: Rp. '.number_format($this->setTunkel(), 2, ',', '.').
-                    '<br />Gaji Kotor: Rp. '.number_format($this->setGator(), 2, ',', '.').
-                    '<br />Zakat Profesi: Rp. '.number_format($this->setZakatProfesi(), 2, ',', '.').
-                    '<br />Take Home Pay: Rp. '.number_format($this->setTakeHomePay(), 2, ',', '.').
-                '</p>';
+            echo '<h5 class="card-title fw-semibold mb-3">'.$this->nama.'</h5>';
+            echo '<table width="100%">
+                    <tr>
+                        <td>NIP</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>'.$this->nip.'</td>
+                    </tr>
+                    <tr>
+                        <td>Jabatan</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>'.$this->jabatan.'</td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>'.$this->agama.'</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>'.$this->status.'</td>
+                    </tr>
+                    <tr>
+                        <td>Gaji Pokok</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>Rp. '.number_format($this->setGapok(), 2, ',', '.').'</td>
+                    </tr>
+                    <tr>
+                        <td>Tunjangan Jabatan</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>Rp. '.number_format($this->setTunjab(), 2, ',', '.').'</td>
+                    </tr>
+                    <tr>
+                        <td>Tunjangan Keluarga</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>Rp. '.number_format($this->setTunkel(), 2, ',', '.').'</td>
+                    </tr>
+                    <tr>
+                        <td>Gaji Kotor</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>Rp. '.number_format($this->setGator(), 2, ',', '.').'</td>
+                    </tr>
+                    <tr>
+                        <td>Zakat Profesi</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>Rp. '.number_format($this->setZakatProfesi(), 2, ',', '.').'</td>
+                    </tr>
+                    <tr>
+                        <td>Take Home Pay</td>
+                        <td>&nbsp;&nbsp;:&nbsp;</td>
+                        <td>Rp. '.number_format($this->setTakeHomePay(), 2, ',', '.').'</td>
+                    </tr>
+                </table>';
         }
     }
-?>
