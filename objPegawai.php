@@ -39,7 +39,6 @@
 <body>
     <!-- header -->
     <header class="sticky-top shadow-sm">
-        <!-- <div class="line"></div> -->
         <div class="container py-3">
             <h3 class="text-center"><?= Pegawai::TITLE ?></h3>
         </div>
