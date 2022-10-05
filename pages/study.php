@@ -26,11 +26,12 @@
                         $p1 = ['tingkatan' => 'SDIT', 'nama' => 'Al - Hikmah', 'daerah' => 'Depok', 'tmasuk' => '2006', 'tlulus' => '2012', 'ket' => 'Lulus'];
                         $p2 = ['tingkatan' => 'SMPIT', 'nama' => 'Madinatul Qur\'an', 'daerah' => 'Depok', 'tmasuk' => '2012', 'tlulus' => '2016', 'ket' => 'Lulus'];
                         $p3 = ['tingkatan' => 'SMK', 'nama' => 'Nasional', 'daerah' => 'Depok', 'tmasuk' => '2016', 'tlulus' => '2019', 'ket' => 'Lulus'];
-                        $p4 = ['tingkatan' => 'Universitas', 'nama' => 'STT - Nurul Fikri', 'daerah' => 'Depok', 'tmasuk' => '2019', 'tlulus' => 'Belum', 'ket' => 'Lulus'];
+                        $p4 = ['tingkatan' => 'Universitas', 'nama' => 'STT - Nurul Fikri', 'daerah' => 'Depok', 'tmasuk' => '2019', 'tlulus' => 'Belum', 'ket' => 'Belum Selesai'];
                         $pendidikans = [$p1, $p2, $p3, $p4];
 
                         $number = 1;
                         foreach ($pendidikans as $pendidikan) {
+                            $badgeColor = $pendidikan['ket'] == 'Lulus' ? 'text-bg-success' : 'text-bg-warning';
                     ?>
                         <tr bgcolor="#ccfbf1">
                             <td class="text-center"><?= $number++ ?></td>
@@ -39,7 +40,7 @@
                             <td class="text-center"><?= $pendidikan['daerah']; ?></td>
                             <td class="text-center"><?= $pendidikan['tmasuk']; ?></td>
                             <td class="text-center"><?= $pendidikan['tlulus']; ?></td>
-                            <td class="text-center"><span class="badge rounded-pill text-bg-success"><?= $pendidikan['ket']; ?></span></td>
+                            <td class="text-center"><span class="badge rounded-pill <?= $badgeColor; ?>"><?= $pendidikan['ket']; ?></span></td>
                         </tr>
                     <?php } ?>
                 </tbody>

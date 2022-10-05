@@ -7,16 +7,15 @@
         </div>
 
         <div class="row">
-
             <div class="col-lg-4 col-md-4">
                 <div class="contact-about">
                     <h3>Azzmnrwebdev</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maiores rem ipsam rerum voluptates inventore ullam quisquam. Impedit, magni? Libero consequatur harum facere beatae perferendis.</p>
                     <div class="social-links">
-                        <a href="#" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://twitter.com/azzmnralwmansyr" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=100074221299040&_rdc=1&_rdr" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/azzmnralwmansyr/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/azzmnrwebdev/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -63,8 +62,6 @@
                     <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
             </div>
-
         </div>
-
     </div>
 </section>

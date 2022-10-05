@@ -1,70 +1,63 @@
 <!-- ======= Task Section ======= -->
 <section id="services" class="services section-bg">
     <div class="container">
-
         <div class="section-title">
             <h2>Task</h2>
             <p>Halaman ini berisi tugas-tugas selama di msib batch tiga nf computer.</p>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        <!-- task html -->
+        <div class="task-html mb-5">
+            <h4>Tugas HTML</h4>
+
+            <div class="row mt-4">
+                <div class="owl-carousel owl-theme">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/img/task/1-html.PNG" class="card-img-top" alt="Tugas 1 HTML">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal Website</h5>
+                                <p class="card-text"><small class="text-muted">Tugas 1 HTML</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/img/task/2-html.PNG" class="card-img-top" alt="Tugas 2 HTML">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Mata Kuliah</h5>
+                                <p class="card-text"><small class="text-muted">Tugas 2 HTML</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/img/task/3-html.PNG" class="card-img-top" alt="Tugas 2 HTML">
+                            <div class="card-body">
+                                <h5 class="card-title">Pembuatan Form</h5>
+                                <p class="card-text"><small class="text-muted">Tugas 3 HTML</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/img/task/4-html.PNG" class="card-img-top" alt="Tugas 2 HTML">
+                            <div class="card-body">
+                                <h5 class="card-title">Layouting Web</h5>
+                                <p class="card-text"><small class="text-muted">Tugas 4 HTML</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-file"></i></div>
-                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-tachometer"></i></div>
-                    <h4 class="title"><a href="">Magni Dolores</a></h4>
-                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-world"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-world"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-world"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                    <div class="icon"><i class="bx bx-world"></i></div>
-                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                </div>
-            </div>
-
         </div>
 
+        <!-- task css dan bootstrap -->
+        <div class="task-css">
+            <h4>Tugas CSS dan Bootstrap</h4>
+        </div>
     </div>
-</section><!-- End Services Section -->
+</section>
