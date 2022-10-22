@@ -6,8 +6,7 @@
             <p>Halaman ini berisi tugas-tugas selama di msib batch tiga nf computer.</p>
         </div>
 
-        <!-- task html -->
-        <div class="task-html mb-5">
+        <!-- <div class="task-html mb-5">
             <h4>Tugas HTML</h4>
 
             <div class="row mt-4">
@@ -55,9 +54,8 @@
             </div>
         </div>
 
-        <!-- task css dan bootstrap -->
         <div class="task-css">
             <h4>Tugas CSS dan Bootstrap</h4>
-        </div>
+        </div> -->
     </div>
 </section>
