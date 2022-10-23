@@ -1,17 +1,17 @@
 <?php
-    // memanggil file pegawai dengan fungsi require
-    require 'Pegawai.php';
+// memanggil file pegawai dengan fungsi require
+require 'Pegawai.php';
 
-    // membuat 6 instance object pegawai
-    $p1 = new Pegawai('01103180', 'Lovina Aulia', 'Manager', 'Islam', 'Menikah');
-    $p2 = new Pegawai('01103181', 'Rafi Maulana', 'Kepala Bagian', 'Kristen', 'Belum Menikah');
-    $p3 = new Pegawai('01103182', 'Yusuf Fadillah', 'Staff', 'Budha', 'Belum Menikah');
-    $p4 = new Pegawai('01103183', 'Fathiah Al Habsyi', 'Asisten Manager', 'Islam', 'Menikah');
-    $p5 = new Pegawai('01103184', 'Daffa Zuhair', 'Staff', 'Hindu', 'Menikah');
-    $p6 = new Pegawai('01103185', 'Muh Azzam Nur Alwi', 'Manager', 'Islam', 'Menikah');
+// membuat 6 instance object pegawai
+$p1 = new Pegawai('01103180', 'Lovina Aulia', 'Manager', 'Islam', 'Menikah');
+$p2 = new Pegawai('01103181', 'Rafi Maulana', 'Kepala Bagian', 'Kristen', 'Belum Menikah');
+$p3 = new Pegawai('01103182', 'Yusuf Fadillah', 'Staff', 'Budha', 'Belum Menikah');
+$p4 = new Pegawai('01103183', 'Fathiah Al Habsyi', 'Asisten Manager', 'Islam', 'Menikah');
+$p5 = new Pegawai('01103184', 'Daffa Zuhair', 'Staff', 'Hindu', 'Menikah');
+$p6 = new Pegawai('01103185', 'Muh Azzam Nur Alwi', 'Manager', 'Islam', 'Menikah');
 
-    // array associative
-    $pegawais = [$p1, $p2, $p3, $p4, $p5, $p6];
+// array associative
+$pegawais = [$p1, $p2, $p3, $p4, $p5, $p6];
 ?>
 
 <!DOCTYPE html>
@@ -38,8 +38,8 @@
 
 <body>
     <!-- header -->
-    <header class="sticky-top shadow-sm">
-        <div class="container py-3">
+    <header>
+        <div class="container">
             <h3 class="text-center"><?= Pegawai::TITLE ?></h3>
         </div>
     </header>
@@ -62,10 +62,10 @@
     </main>
 
     <!-- footer -->
-    <footer class="py-4">
+    <footer>
         <div class="container">
             <p class="text-small text-center text-muted m-0">
-                Built with 💖 by <a href="https://github.com/azzmnrwebdev/php_msib/tree/pertemuan-4" target="_blank" class="text-decoration-none fw-semibold">Muh. Azzam Nur Alwi Mansyur</a>
+                Built with 💖 by <a href="https://github.com/azzmnrwebdev/php_msib/tree/pertemuan-4" target="_blank" class="fw-semibold ft-name">Muh. Azzam Nur Alwi Mansyur</a>
             </p>
         </div>
     </footer>
