@@ -24,5 +24,5 @@ Latihan dan Tugas PHP dari NF Computer MSIB Batch Tiga
 
 ### Hasil
 
-[screenshot]: assets/image/hasil.png
+[screenshot]: assets/image/screenshot.png
 ![Hasil Tugas][screenshot]
